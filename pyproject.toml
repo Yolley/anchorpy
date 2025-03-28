@@ -1,6 +1,6 @@
 [project]
 name = "anchorpy-fork"
-version = "0.23.1"
+version = "0.23.2"
 description = "The Python Anchor client."
 authors = [{ name = "kevinheavey", email = "kevinheavey123@gmail.com" }]
 requires-python = "~=3.9"
@@ -23,14 +23,14 @@ cli = [
     "typer>=0,<1",
     "ipython>=8.0.1,<9",
     "genpy~=2021.1",
-    "black>=22.3.0,<23",
+    "black>=25.1.0,<26",
     "autoflake~=1.4",
 ]
 pytest = [
-    "pytest>=7.2.0,<8",
+    "pytest>=8,<9",
     "py>=1.11.0,<2",
-    "pytest-xprocess>=0.18.1,<0.19",
-    "pytest-asyncio>=0.21.0,<0.22",
+    "pytest-xprocess>=1,<2",
+    "pytest-asyncio>=0,<1",
 ]
 
 [project.urls]
@@ -45,16 +45,16 @@ pytest_anchorpy = "anchorpy.pytest_plugin"
 
 [dependency-groups]
 dev = [
-    "black>=22.3.0,<23",
+    "black>=25.1.0,<26",
     "mypy>=0.982,<0.983",
     "jinja2==3.0.3",
     "mkdocs-material>=8.1.7,<9",
     "bump2version>=1.0.1,<2",
     "mkdocstrings>=0.17.0,<0.18",
     "py>=1.11.0,<2",
-    "pytest>=7.2.0,<8",
-    "pytest-asyncio>=0.21.0,<0.22",
-    "pytest-xprocess>=0.18.1,<0.19",
+    "pytest>=8,<9",
+    "pytest-xprocess>=1,<2",
+    "pytest-asyncio>=0,<1",
     "ruff>=0.0.220,<0.0.221",
 ]
 

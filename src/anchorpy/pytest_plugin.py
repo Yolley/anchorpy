@@ -1,4 +1,5 @@
 """This module provides the `localnet_fixture` fixture factory."""
+
 import os
 import signal
 import subprocess
@@ -7,8 +8,8 @@ from typing import AsyncGenerator, Callable, Literal, Optional, Union
 
 from pytest import fixture
 from pytest_asyncio import fixture as async_fixture
-from pytest_xprocess import getrootdir
 from xprocess import ProcessStarter, XProcess, XProcessInfo
+from xprocess.pytest_xprocess import getrootdir
 
 from anchorpy.program.core import Program
 from anchorpy.workspace import close_workspace, create_workspace
@@ -151,7 +152,7 @@ def localnet_fixture(
 
     Returns:
         A localnet fixture for use with pytest.
-    """  # noqa: E501,D202
+    """  # noqa: E501
 
     @fixture(scope=scope)
     def _localnet_fixture(_fixed_xprocess):
@@ -202,7 +203,7 @@ def workspace_fixture(
 
     Returns:
         A workspace fixture for use with pytest.
-    """  # noqa: E501,D202
+    """  # noqa: E501
 
     @async_fixture(scope=scope)
     async def _workspace_fixture(
