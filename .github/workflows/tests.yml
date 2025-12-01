@@ -31,7 +31,7 @@ jobs:
           override: true
       - uses: Swatinem/rust-cache@v1
       - name: Install Solana
-        run: sh -c "$(curl -sSfL https://release.solana.com/v${{ env.solana_version }}/install)"
+        run: sh -c "$(curl -sSfL https://release.anza.xyz/v${{ env.solana_version }}/install)"
 
       - name: Add Solana to path
         run: echo "/home/runner/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
