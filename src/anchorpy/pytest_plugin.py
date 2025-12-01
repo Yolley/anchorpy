@@ -153,7 +153,6 @@ def localnet_fixture(
     Returns:
         A localnet fixture for use with pytest.
     """  # noqa: E501
-
     @fixture(scope=scope)
     def _localnet_fixture(_fixed_xprocess):
         class Starter(ProcessStarter):
@@ -204,7 +203,6 @@ def workspace_fixture(
     Returns:
         A workspace fixture for use with pytest.
     """  # noqa: E501
-
     @async_fixture(scope=scope)
     async def _workspace_fixture(
         _fixed_xprocess,
