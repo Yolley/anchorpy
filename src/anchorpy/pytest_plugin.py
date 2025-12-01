@@ -125,7 +125,7 @@ class _FixedXProcess(XProcess):
         return info.pid, info.logpath
 
 
-@async_fixture(scope="session")
+@fixture(scope="session")
 def _fixed_xprocess(request):
     """Yield session-scoped XProcess helper to manage long-running processes required for testing."""  # noqa: E501
     rootdir = getrootdir(request.config)
