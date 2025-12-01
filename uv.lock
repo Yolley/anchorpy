@@ -85,7 +85,7 @@ requires-dist = [
     { name = "ipython", marker = "extra == 'cli'", specifier = ">=8.0.1,<9" },
     { name = "py", marker = "extra == 'pytest'", specifier = ">=1.11.0,<2" },
     { name = "pyheck", specifier = ">=0.1.4,<0.2" },
-    { name = "pytest", marker = "extra == 'pytest'", specifier = ">=9,<10" },
+    { name = "pytest", marker = "extra == 'pytest'", specifier = ">=8,<10" },
     { name = "pytest-asyncio", marker = "extra == 'pytest'", specifier = ">=1,<2" },
     { name = "pytest-xprocess", marker = "extra == 'pytest'", specifier = ">=1,<2" },
     { name = "solana-fork", specifier = ">=0.36.7,<1.0" },
